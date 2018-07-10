@@ -10,6 +10,8 @@ console.log('[..]Buenas Tardes, Programando en Javascrip en Buenos Aires');
     + document.querySelector("#golosina_descripcion").value ;
     
     
+    document.querySelector("#golosina_titulo").value ="";
+    document.querySelector("#golosina_descripcion").value ="" ;
     //alert(12345678)
 
 console.log('[OK]Buenas Tardes, Programando en Javascrip en Buenos Aires');

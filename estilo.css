@@ -16,6 +16,7 @@ body{
   grid-auto-rows: minmax(100px, auto);  
 }
 
+
 header{
   background-color: darkred;
   
@@ -59,9 +60,15 @@ header, footer, h2, h3 {
 }
 
 aside{ background:red;
+  
  
 
 }
+
+#golosina_descripcion{ width: 304px;
+  height: 52px;
+}
+
 
 #panelMsg{ background-color:blue;
   grid-column: 1/-1;
