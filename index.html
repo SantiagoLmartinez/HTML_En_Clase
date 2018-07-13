@@ -1,91 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
-  
+<html lang="en">
   <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Golosinas!</title>
+    <!-- import the webpage's stylesheet -->
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/menu.css">
+    <link rel="stylesheet" href="/slider-bar.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500i,700,800" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <link rel="stylesheet" href="/estilo.css">
-
+    
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
     <script src="/cliente.js" defer></script>
-    
   </head>  
   
   <body>
+   
+    <header class="header">
+  <a href="" class="logo">Tu Marca</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#Inicio">Inicio</a></li>
+    <li><a href="#about">Novedades</a></li>
+    <li><a href="#careers">Sobre Nosotros</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</header>
     
-    <header class="header"> Mayorista para kioscos.
-    </header>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://image.ibb.co/mjZwBo/coffee.jpg" alt="coffee" style="width:100%">
+  <img class="mySlides" src="https://image.ibb.co/if97HT/sound.jpg" style="width:100%">
+  <img class="mySlides" src="https://image.ibb.co/bPSSHT/workbench.jpg" style="width:100%">
 
-    <nav class="row">
-      <ul>
-        <h3>
-          Ofertas en:
-        </h3>
-        
-        <li>Chupetines</li>
-        <li>Caramelos</li>
-        <li>Chicles</li>
-      </ul>
-    </nav>
-    
-    <section class="col-3 menu">
-      <h2>Venta de Golosinas</h2>
-      
-      <article class="aside">
-        <h3>Alfajor</h3>
-        Alfajores Capitan
-            <textarea>Estan Re copados, se consiguen en zona sur y Capital Federal    
-        
-        </textarea>
-      </article>
-      
-      <article>
-        <h3>Galletita</h3>
-        Rodesia
-        <textarea >Son de terrabusi!
-        </textarea>
-        
-      </article>
-      
-      <article>
-        <h3>Chicle</h3>
-        Chicle Jirafa
-        <textarea >Debe ser largo como el cuello de una jirafa
-        </textarea>
-      </article>
-      
-      <article>
-        <h3>Chupetin</h3>
-        TopoLin Sorpresa
-        <textarea > Medio pelo el juguete y mucho peor el chupetin.
-        </textarea>
-      </article>
-      
-      <div id="panelMsg"> 
-        Mensaje: </div>
-      
-    </section>
-    
-    <aside>
-    Formulario:
-   <input type="text" id="golosina_titulo" />
-      <textarea id="golosina_descripcion">    
-                </textarea>
-      
-    <button 
-            id="elBoton"
-            class="fijate"
-            onclick="Distribuidora.ofertar();"
-            
-            
-            > Presione!!
-      
-      </button>
-      
-    </aside>
-    
-    <footer class="footer"> Pie de Pagina
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+  
+
+<footer class="myFooter" id="footer-wrapper">
+<div class="footer-icons">
+      <a href="https://www.pinterest.com/" class="generic-anchor" target="_blank"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.facebook.com/" class="generic-anchor" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/" class="generic-anchor" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/" class="generic-anchor" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" class="generic-anchor" target="_blank"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/" class="generic-anchor" target="_blank" ><i class="fa fa-google-plus"></i></a>
+      </div>
+  <section class="footer-bottom">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright"></i> 2018 <span class="footer-bottom-rights"> - slm17slm17@gmail.com - </span>
+    </div>
+  </section>
     </footer>
-
   </body>
 </html>

@@ -1,22 +1,17 @@
-class Distribuidora{
-  
-  static ofertar(){
-console.log('[..]Buenas Tardes, Programando en Javascrip en Buenos Aires');
+var slideIndex = 1;
+showDivs(slideIndex);
 
-//document.querySelector("#panelMsg").innerHTML += "Algo! " ;
-
-    document.querySelector("#panelMsg").innerHTML +=
-    document.querySelector("#golosina_titulo").value 
-    + document.querySelector("#golosina_descripcion").value ;
-    
-    
-    document.querySelector("#golosina_titulo").value ="";
-    document.querySelector("#golosina_descripcion").value ="" ;
-    //alert(12345678)
-
-console.log('[OK]Buenas Tardes, Programando en Javascrip en Buenos Aires');
-    
-  }
-
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
